@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root@rayan: ~</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+
+    <div id="boot-screen">
+        <div class="boot-text">
+            <p>[ OK ] Loading Complete CV Data...</p>
+            <p>[ OK ] Initializing Skills & Projects...</p>
+        </div>
+    </div>
+
+    <div class="scanlines"></div>
+
+    <nav class="navbar">
+        <a href="#home" style="text-decoration: none;"><div class="logo"><span class="glitch">R.RIGOULET</span></div></a>
+        
+        <div class="nav-right">
+            <button id="lang-btn">EN</button>
+            <div class="nav-links">
+                <a href="#home">01_Home</a>
+                <a href="#about">02_Bio</a>
+                <a href="#skills">03_Skills</a>
+                <a href="#experience">04_Missions</a>
+                <a href="#portfolio">05_Projets</a>
+                <a href="#contact">06_Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">bash — session_init</span>
+            </div>
+            <div class="terminal-body">
+                <p class="cmd">whoami</p>
+                <h1 class="name-title">Rayan Rigoulet</h1>
+                <h2 class="subtitle" data-fr="Futur Ingénieur en Cybersécurité" data-en="Future Cybersecurity Engineer">Futur Ingénieur en Cybersécurité</h2>
+                <br>
+                <p class="status-badge" data-fr="[ ACTUELLEMENT : Stage @ Orange Cyberdefense ]" data-en="[ CURRENTLY: Intern @ Orange Cyberdefense ]">[ ACTUELLEMENT : Stage @ Orange Cyberdefense ]</p>
+                <br>
+                <div class="input-area">
+                    <span class="prompt">~$</span> <span id="typewriter"></span><span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section hidden">
+        <h2 class="section-title"><span>></span> System.Info()</h2>
+        <div class="grid">
+            <div class="cyber-card full-width">
+                <h3 data-fr="Profil" data-en="Profile">Profil</h3>
+                <p class="main-text" data-fr="Âgé de 20 ans, étudiant en 2ème année de BUT R&T (Spécialité Cybersécurité) à l'IUT de Villetaneuse. Passionné par les nouvelles technologies, je me distingue par ma capacité d'adaptation. Je suis prêt à mettre mes atouts au sein d'une équipe." 
+                   data-en="20 years old, 2nd-year BUT R&T student (Cybersecurity specialty) at Villetaneuse IUT. Passionate about new technologies, I stand out through my adaptability. I am ready to bring my strengths to a team.">
+                   Âgé de 20 ans, étudiant en 2ème année de BUT R&T (Spécialité Cybersécurité)...
+                </p>
+            </div>
+
+            <div class="cyber-card">
+                <h3 data-fr="Formation" data-en="Education">Formation</h3>
+                <ul class="terminal-list">
+                    <li><strong>2024-2027 :</strong> BUT R&T - Parcours Cybersécurité (2ème année)</li>
+                    <li><strong>2024 :</strong> Baccalauréat Général (Lycée Montaigne, Paris 6ème)<br>
+                        <span style="font-size: 0.9em; color: #8b949e;">Spé: Mathématiques et NSI. Mention AB.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cyber-card">
+                <h3 data-fr="Soft Skills" data-en="Soft Skills">Soft Skills</h3>
+                <ul class="terminal-list">
+                    <li data-fr="Curiosité et esprit d'analyse" data-en="Curiosity and analytical mind">Curiosité et esprit d'analyse</li>
+                    <li data-fr="Réactivité et persévérance" data-en="Reactivity and perseverance">Réactivité et persévérance</li>
+                    <li data-fr="Capacité à apprendre rapidement" data-en="Fast learning ability">Capacité à apprendre rapidement</li>
+                </ul>
+            </div>
+
+            <div class="cyber-card">
+                <h3 data-fr="Centres d'intérêt" data-en="Interests">Centres d'intérêt</h3>
+                <ul class="terminal-list">
+                    <li data-fr="Jeux Vidéo : FPS & Compétitif" data-en="Video Games: FPS & Competitive">Jeux Vidéo : FPS & Compétitif</li>
+                    <li data-fr="Nouvelles technologies : Innovation" data-en="New technologies: Innovation">Nouvelles technologies : Innovation</li>
+                    <li data-fr="La parfumerie" data-en="Perfumery">La parfumerie</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section hidden">
+        <h2 class="section-title"><span>></span> cat skills.txt</h2>
+        <div class="grid">
+            <div class="cyber-card">
+                <h3 data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</h3>
+                <p class="main-text">Firewalling, Hardening des équipements, Analyse de risques, Pentesting, TryHackMe.</p>
+            </div>
+            
+            <div class="cyber-card">
+                <h3 data-fr="Réseaux" data-en="Networks">Réseaux</h3>
+                <p class="main-text">Adressage IP, LAN/WAN, Protocoles de routage (RIP, OSPF), Surveillance d'infrastructure.</p>
+            </div>
+
+            <div class="cyber-card">
+                <h3 data-fr="Admin Sys & Outils" data-en="SysAdmin & Tools">Admin Sys & Outils</h3>
+                <p class="main-text"><strong>Linux :</strong> Bonne maîtrise (gestion utilisateurs/permissions).<br>
+                <strong>Outils :</strong> VirtualBox, Cisco Packet Tracer, Wireshark.</p>
+            </div>
+
+            <div class="cyber-card">
+                <h3 data-fr="Programmation" data-en="Programming">Programmation</h3>
+                <p class="main-text">Python, HTML, CSS, Bash.</p>
+            </div>
+
+            <div class="cyber-card full-width">
+                <h3 data-fr="Compétences Linguistiques" data-en="Linguistic Skills">Compétences Linguistiques</h3>
+                <div class="lang-grid">
+                    <div class="lang-item">
+                        <span class="lang-name">Français</span>
+                        <span class="lang-desc" data-fr="Langue maternelle" data-en="Native speaker">Langue maternelle</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Anglais</span>
+                        <span class="lang-desc" data-fr="Niveau avancé (Expression orale fluide, bonne compréhension écrite/orale)" data-en="Advanced (Fluent speaking, good written/oral comprehension)">Niveau avancé (Expression orale fluide, bonne compréhension écrite/orale)</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Espagnol</span>
+                        <span class="lang-desc" data-fr="Niveau intermédiaire (Capacité à tenir une conversation simple)" data-en="Intermediate (Ability to hold a simple conversation)">Niveau intermédiaire (Capacité à tenir une conversation simple)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section hidden">
+        <h2 class="section-title"><span>></span> Mission.Log()</h2>
+        <div class="exp-box">
+            <div class="exp-info">
+                <h3>ORANGE - DIRECTION CYBERSÉCURITÉ</h3>
+                <span class="date">20 avril - 10 juin 2026 | Paris</span>
+            </div>
+            <p class="highlight-text" data-fr="Stage Cybersécurité" data-en="Cybersecurity Internship">Stage Cybersécurité</p>
+            <ul class="terminal-list mt-2">
+                <li data-fr="Ingénierie et architecture réseaux IP (LAN/WAN) avec l'équipe ReIP." data-en="IP network engineering and architecture (LAN/WAN) with the ReIP team.">Ingénierie et architecture réseaux IP (LAN/WAN) avec l'équipe ReIP.</li>
+                <li data-fr="Maquettage (POC) et validation de configs de sécurité (Firewalling) avec OCD." data-en="POC and security configuration validation (Firewalling) with OCD.">Maquettage (POC) et validation de configs de sécurité (Firewalling) avec OCD.</li>
+                <li data-fr="Analyse de risques et hardening des équipements réseaux." data-en="Risk analysis and network equipment hardening.">Analyse de risques et hardening des équipements réseaux.</li>
+                <li data-fr="Réunions Cyber (qualification, prévention, conseil) et rédaction de propositions commerciales." data-en="Cyber meetings (qualification, prevention, advice) and commercial drafting.">Réunions Cyber (qualification, prévention, conseil) et rédaction de propositions commerciales.</li>
+            </ul>
+            <p class="mt-2" style="color: #8b949e;"><strong style="color: var(--main);" data-fr="Compétences développées :" data-en="Skills developed:">Compétences développées :</strong> Administration réseaux/SI sécurisé, surveillance SI, connexion entreprises/usagers, création d'outils R&T.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section hidden">
+        <h2 class="section-title"><span>></span> ls ./Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <div class="tag">Pentesting</div>
+                <h3 data-fr="Audit de sécurité" data-en="Security Audit">Audit de sécurité</h3>
+                <p data-fr="Réalisation d'un audit de sécurité et tests d'intrusion (Pentesting)." data-en="Performing a security audit and penetration testing (Pentesting).">Réalisation d'un audit de sécurité et tests d'intrusion (Pentesting).</p>
+            </div>
+            <div class="project-card">
+                <div class="tag">Risk Management</div>
+                <h3 data-fr="Analyse Prestataire" data-en="Third-Party Analysis">Analyse Prestataire</h3>
+                <p data-fr="Analyse et sécurisation d'un environnement prestataire (Third-Party Risk Management)." data-en="Analysis and securing of a third-party environment (Third-Party Risk Management).">Analyse et sécurisation d'un environnement prestataire.</p>
+            </div>
+            <div class="project-card">
+                <div class="tag">SysAdmin</div>
+                <h3 data-fr="Administration Linux" data-en="Linux Administration">Administration Linux</h3>
+                <p data-fr="Administration Linux : Gestion des utilisateurs et des permissions." data-en="Linux Administration: User and permission management.">Administration Linux : Gestion des utilisateurs et des permissions.</p>
+            </div>
+            <div class="project-card">
+                <div class="tag">Dev</div>
+                <h3 data-fr="App Banque en ligne" data-en="Online Banking App">App Banque en ligne</h3>
+                <p data-fr="Création d'une application de banque en ligne (Type Pixpay/Revolut)." data-en="Creation of an online banking application (Pixpay/Revolut type).">Création d'une application de banque en ligne (Type Pixpay/Revolut).</p>
+            </div>
+        </div>
+        <div class="center-btn mt-4">
+            <a href="https://drive.google.com/drive/folders/1cCQ-rHycNr1Z9Fp4wIPpELZNGX6EWP5e?usp=sharing" target="_blank" class="cyber-btn" data-fr="[ LIEN VERS MES PROJETS DRIVE ]" data-en="[ LINK TO MY PROJECTS DRIVE ]">[ LIEN VERS MES PROJETS DRIVE ]</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section hidden">
+        <h2 class="section-title"><span>></span> Connect.Establish()</h2>
+        <div class="terminal-window contact-window">
+            <div class="terminal-body">
+                <p><span class="label">MAIL:</span> <a href="mailto:rayanrigoulet.pro@gmail.com" class="link">rayanrigoulet.pro@gmail.com</a></p>
+                <p><span class="label">TEL:</span> <a href="tel:+33648538628" class="link">06 48 53 86 28</a></p>
+                <p><span class="label">LOC:</span> <span class="white">Paris, 5ème arrondissement</span></p>
+                <p><span class="label">LINKEDIN:</span> <a href="#" class="link">Rayan Rigoulet</a></p>
+                <div class="alert mt-4">
+                    <p class="blink" data-fr="[ RECHERCHE D'ALTERNANCE - DÈS SEPTEMBRE 2026 ]" data-en="[ SEEKING APPRENTICESHIP - FROM SEPT 2026 ]">[ RECHERCHE D'ALTERNANCE - DÈS SEPTEMBRE 2026 ]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
